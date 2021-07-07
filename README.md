@@ -1,4 +1,4 @@
-# CONTRIBUTORS:
+## CONTRIBUTORS:
 
 
 - [Alex Leon](https://github.com/aleon510)
