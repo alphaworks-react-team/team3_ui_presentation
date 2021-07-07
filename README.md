@@ -1,2 +1,5 @@
 # CONTRIBUTORS:
-[Jernice Duncan](https://github.com/jerniceduncan)
+
+
+- [Alex Leon](https://github.com/aleon510)
+- [Jernice Duncan](https://github.com/jerniceduncan)
