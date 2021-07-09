@@ -6,7 +6,7 @@
 - [Danny Kebede](https://github.com/dannythedeveloper1)
 
 
-# [Google Slide](https://docs.google.com/presentation/d/1OpKDHqTLcUz6mUfraPyVMMJp_1bqGsjibXElK8GWCmw/edit?usp=sharing)
+# [Google Slides](https://docs.google.com/presentation/d/1OpKDHqTLcUz6mUfraPyVMMJp_1bqGsjibXElK8GWCmw/edit?usp=sharing)
 
 # Resource Links
 
