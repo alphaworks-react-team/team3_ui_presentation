@@ -53,7 +53,4 @@ const Home = ({ design }) => {
 	);
 };
 
-const style = {
-	minHeight: "",
-};
 export default Home;

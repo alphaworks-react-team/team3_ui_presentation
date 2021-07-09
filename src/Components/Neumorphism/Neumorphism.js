@@ -1,8 +1,12 @@
 import React from 'react'
 
 const Neumorphism = () => {
+    const styles = {
+			minHeight: "80vh",
+			backgroundColor: "purple",
+		};
     return (
-        <div>
+        <div style={styles}>
             Neumorphism
         </div>
     )
