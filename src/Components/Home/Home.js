@@ -1,6 +1,8 @@
 import Card from "./card";
 import { Link } from "react-router-dom";
 
+
+
 const Home = () => {
 	const styles = {
 		minHeight: "80vh",
@@ -16,6 +18,7 @@ const Home = () => {
 		},
 	};
 	return (
+
 		<div style={styles}>
 			<Link to="/MaterialDesign" style={styles.linkStyle}>
 				<Card title={"Material Design"} />
