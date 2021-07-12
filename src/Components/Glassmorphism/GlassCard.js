@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const GlassCard = () => {
   const cardStyles = {
     position: 'relative',
@@ -39,24 +40,29 @@ const GlassCard = () => {
         backgroundImage:
           'url(https://pngimage.net/wp-content/uploads/2018/05/credit-card-chip-png-9.png)',
         backgroundPosition: 'center',
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         position: 'absolute',
         height: '45px',
-        top: '80px',
-        left: '50px',
-        maxWidth: '64px',
+        top: '85px',
+        left: '45px',
+        width: '64px',
       },
 
       number: {
         position: 'absolute',
-        bottom: '130px',
-        left: '50px',
+        bottom: '120px',
+        left: '45px',
         color: '#fff',
         fontWeight: '500',
         fontSize: '18px',
         textShadow: '0 2px 1px #005',
       },
+      name: {
+        position: 'absolute',
+        top: '250px',
+        left: '45px',
+      }
     },
 
     back: {},
@@ -71,15 +77,16 @@ const GlassCard = () => {
         <div style={cardStyles.face.bank}>
           <h3>Bank Name</h3>
         </div>
-        <div style={cardStyles.face.imgChip}>textdecoration</div>
+        <div style={cardStyles.face.imgChip}>
+        </div>
         <div style={cardStyles.face.number}>
           <h3>0123 4567 8901 2345</h3>
         </div>
         <div
           style={{
             position: 'absolute',
-            bottom: '90px',
-            left: '50px',
+            bottom: '50px',
+            left: '45px',
             display: 'flex',
             alignItems: 'center',
             lineHeight: '1em',
@@ -101,6 +108,7 @@ const GlassCard = () => {
             </span>
           </h5>
         </div>
+        <div style={cardStyles.face.name}>Mohammed Smith</div>
         <div
           className='before'
           style={{
