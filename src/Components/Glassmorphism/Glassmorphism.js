@@ -13,7 +13,7 @@ const Glassmorphism = () => {
   };
 
   return <div style={styles}>
-    <GlassCard>HELLO</GlassCard>
+    <GlassCard></GlassCard>
   </div>;
 };
 
