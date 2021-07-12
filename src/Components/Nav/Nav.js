@@ -18,7 +18,7 @@ const Nav = ({design}) => {
 		<div style={styles}>
 			<h1 style={styles.textStyle}>Welcome to Design Layouts</h1>
 			<Link to="/" style={styles.linkStyle}> lets go Home</Link>
-			<Link to={design}>MatertialDesign</Link>
+			<Link to={design}>MaterialDesign</Link>
 		</div>
 	);
 };

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Home = ({ design }) => {
     useEffect(() => {
-        hundleclick();
+        handleClick();
     }, [design]);
-    const hundleclick = () => {
+    const handleClick = () => {
             
         }
     const styles = {
@@ -25,7 +25,7 @@ const Home = ({ design }) => {
     console.log(design);
 	return (
         <div style={styles}>
-			<Link to="/MaterialDesign" style={styles.linkStyle} onClick={hundleclick}>
+			<Link to="/MaterialDesign" style={styles.linkStyle} onClick={handleClick}>
 				<Card title={"Material Design"} />
 			</Link>
 			<Link to="/Glassmorphism" style={styles.linkStyle}>
