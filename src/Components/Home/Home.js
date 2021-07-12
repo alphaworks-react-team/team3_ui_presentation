@@ -1,16 +1,9 @@
-import React,{useEffect} from "react";
 import Card from "./card";
 import { Link } from "react-router-dom";
 
-const Home = ({ design }) => {
-    useEffect(() => {
-        hundleclick();
-    }, [design]);
-    const hundleclick = () => {
-            
-        }
-    const styles = {
-        minHeight: "80vh",
+const Home = () => {
+	const styles = {
+		minHeight: "80vh",
 		backgroundColor: "#afd275",
 		padding: "50px",
 		display: "flex",
@@ -18,14 +11,13 @@ const Home = ({ design }) => {
 		alignContents: "space-evenly",
 		flexWrap: "wrap",
 		linkStyle: {
-            textDecoration: "none",
+			textDecoration: "none",
 			color: "black",
 		},
 	};
-    console.log(design);
 	return (
-        <div style={styles}>
-			<Link to="/MaterialDesign" style={styles.linkStyle} onClick={hundleclick}>
+		<div style={styles}>
+			<Link to="/MaterialDesign" style={styles.linkStyle}>
 				<Card title={"Material Design"} />
 			</Link>
 			<Link to="/Glassmorphism" style={styles.linkStyle}>
@@ -37,7 +29,7 @@ const Home = ({ design }) => {
 			<Link to="/FLayout" style={styles.linkStyle}>
 				<Card title={"F Layout"} />
 			</Link>
-			<Link to="/MaterialDesign" style={styles.linkStyle}>
+			<Link to="/RuleOfThird" style={styles.linkStyle}>
 				<Card title={"Rule of Thirds"} />
 			</Link>
 			<Link to="/Neumorphism" style={styles.linkStyle}>
@@ -46,7 +38,7 @@ const Home = ({ design }) => {
 			<Link to="/FlatDesign" style={styles.linkStyle}>
 				<Card title={"Flat Design"} />
 			</Link>
-			<Link to="/GoldRatio" style={styles.linkStyle}>
+			<Link to="/GoldenRatio" style={styles.linkStyle}>
 				<Card title={"Golden Ratio"} />
 			</Link>
 		</div>
