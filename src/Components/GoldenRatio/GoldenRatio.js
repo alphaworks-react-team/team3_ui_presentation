@@ -6,7 +6,7 @@ const GoldenRatio = () => {
 			backgroundColor: "purple",
 		};
     return (
-        <div styles ={styles}>
+        <div style ={styles}>
             GoldenRatio
         </div>
     )

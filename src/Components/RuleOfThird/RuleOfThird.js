@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RuleofThird = () => {
+const RuleOfThird = () => {
     const styles = {
         minHeight: "80vh",
         backgroundColor:"purple",
@@ -12,4 +12,4 @@ const RuleofThird = () => {
     )
 }
 
-export default RuleofThird
+export default RuleOfThird;
