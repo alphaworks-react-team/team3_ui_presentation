@@ -34,44 +34,72 @@ const FLayout = () => {
   };
 
   const bStyles = {
-      borderRadius: "12px",
-      
+    borderRadius: "12px",
   };
-
-
-
+  const articleStyles = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  };
+  const cardStyles = {
+    width: "50vw",
+  };
   return (
     <div style={styles}>
       <div style={styles.google}>
         <div style={imgStyles}></div>
         <input></input>
+
         <button style={bStyles}>Search</button>
         <button style={bStyles}>Sign In</button>
         <GoogleButton
-         onClick={() => { console.log('Google button clicked') }}/>
+          onClick={() => {
+            console.log("Google button clicked");
+          }}
+        />
       </div>
       <hr style={styles.hrStyles}></hr>
       <div style={styles.leftStyles}>
         <input style={styles.inputStyles}></input>
-        <a style={aStyles} href="https://www.google.com">Web</a>
-        <a style={aStyles} href="https://www.google.com/imghp?hl=en">Images</a>
-        <a style={aStyles} href="https://maps.google.com">Maps</a>
-        <a style={aStyles} href="https://www.google.com/videohp?hl=en">Videos</a>
-        <a style={aStyles} href="https://news.google.com/foryou?hl=en-US&gl=US&ceid=US:en">
+        <a style={aStyles} href="https://www.google.com">
+          Web
+        </a>
+        <a style={aStyles} href="https://www.google.com/imghp?hl=en">
+          Images
+        </a>
+        <a style={aStyles} href="https://maps.google.com">
+          Maps
+        </a>
+        <a style={aStyles} href="https://www.google.com/videohp?hl=en">
+          Videos
+        </a>
+        <a
+          style={aStyles}
+          href="https://news.google.com/foryou?hl=en-US&gl=US&ceid=US:en"
+        >
           News
         </a>
-        <a style={aStyles} href="https://shopping.google.com/?utm_source=digital_paid&utm_medium=google_search&utm_campaign=bkws-gse-acq&gclsrc=aw.ds&gclid=CjwKCAjw55-HBhAHEiwARMCszs-fRqsqBuKg0qsNsa8ovEB3EFPKdeRMlt_tXGZqwg0MpzoRa94hnRoCGAQQAvD_BwE">
+        <a
+          style={aStyles}
+          href="https://shopping.google.com/?utm_source=digital_paid&utm_medium=google_search&utm_campaign=bkws-gse-acq&gclsrc=aw.ds&gclid=CjwKCAjw55-HBhAHEiwARMCszs-fRqsqBuKg0qsNsa8ovEB3EFPKdeRMlt_tXGZqwg0MpzoRa94hnRoCGAQQAvD_BwE"
+        >
           Shopping
         </a>
-        <a style={aStyles} href="https://www.google.com/morehp?hl=en">More</a>
+        <a style={aStyles} href="https://www.google.com/morehp?hl=en">
+          More
+        </a>
       </div>
-         <h3> </h3>
-
-
+      <h3> </h3>
+      <div style={articleStyles}>
+        {[...new Array(10)].map((article, index) => (
+          <div style={cardStyles}>
+            <h1>Article {index + 1}</h1>
+            <p>this is another article</p>
+          </div>
+        ))}
       </div>
-    
+    </div>
   );
 };
-
 
 export default FLayout;
