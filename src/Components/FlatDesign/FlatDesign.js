@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
+import FlatGrid from './FlatGrid';
 
 const FlatDesign = () => {
-    const styles = {
-			minHeight: "80vh",
-			backgroundColor: "purple",
-		};
-    return (
-        <div style={styles}>
-            FlatDesign
-        </div>
-    )
-}
+  const styles = {
+    minHeight: '80vh',
+    backgroundColor: 'purple',
+  };
+  return (
+    <div style={styles}>
+      <FlatGrid></FlatGrid>
+    </div>
+  );
+};
 
-export default FlatDesign
+export default FlatDesign;

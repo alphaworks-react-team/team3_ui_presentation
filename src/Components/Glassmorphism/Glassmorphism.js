@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GlassCard from './GlassCard';
+import GlassFront from './GlassFront';
+import GlassBack from './GlassBack';
 const Glassmorphism = () => {
     const styles = {
     display: 'flex',
@@ -13,7 +14,8 @@ const Glassmorphism = () => {
   };
 
   return <div style={styles}>
-    <GlassCard></GlassCard>
+    <GlassFront></GlassFront>
+    <GlassBack></GlassBack>
   </div>;
 };
 
