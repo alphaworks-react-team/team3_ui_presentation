@@ -34,6 +34,8 @@ const ZLayout = () => {
     justifyContent: "space-between",
     width: "400px",
     fontFamily: "Arial, Helvetica, sans-serif",
+    fontVariant: "small-caps",
+    fontWeight: "bold",
 
     // paddingLeft: "22px",
     listStyle: "none",
@@ -64,7 +66,10 @@ const ZLayout = () => {
     alignItems: "center",
     // outlineStyle: "solid",
     // outlineColor: "#000039",
+    fontVariant: "small-caps",
+    fontWeight: "bold",
     fontFamily: "Arial, Helvetica, sans-serif",
+    color: "#000039",
 
     // justifyContent: "space-around",
   };
@@ -72,10 +77,12 @@ const ZLayout = () => {
     // backgroundColor: "#000039",
     height: "115px",
     width: "325px",
-    // borderRadius: "25px",
-    color: "blue",
+    borderRadius: "25px",
+    color: "#000039",
     fontFamily: "Arial, Helvetica, sans-serif",
     border: "20px solid #000039",
+    fontWeight: "bold",
+    fontSize: "16px",
   };
 
   return (
