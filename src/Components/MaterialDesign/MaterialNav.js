@@ -12,6 +12,8 @@ const MaterialNav = () => {
 		background:
 			"linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25))",
 		height: "10vh",
+		padding: "0 20px",
+
 		display: "flex",
 		alignItems: "center",
 		color: "gray",
@@ -19,12 +21,12 @@ const MaterialNav = () => {
 			flex: "0.3",
 			display: "flex",
 			alignItems: "center",
-			gap: "3%",
-			justifyContent: "space-around",
+			gap: "2%",
+			justifyContent: "flex-start",
+			// alignContent:"flex-start"
 		},
 		img: {
-			width: "200px",
-
+			width: "100px",
 			backgroundImage:
 				"url(https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png)",
 			// backgroundPosition: "center",
