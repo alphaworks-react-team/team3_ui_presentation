@@ -1,0 +1,8 @@
+.hover:hover{
+    transform: scale(1.001);
+    background: #d4d4d3;
+    /* padding:2px 5px; */
+    cursor: pointer;
+    width:100%;
+    border-radius: 5px;
+}
