@@ -1,8 +1,6 @@
 import Card from "./card";
 import { Link } from "react-router-dom";
 
-
-
 const Home = () => {
 	const styles = {
 		minHeight: "80vh",
