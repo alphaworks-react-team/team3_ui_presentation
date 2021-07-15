@@ -29,18 +29,61 @@ const ZLayout = () => {
   const navStyles = {
     display: "inline-flex",
     width: "400px",
-    color: "blue",
+    color: "#000039",
     fontSize: "20px",
     justifyContent: "space-between",
     width: "400px",
+    fontFamily: "Arial, Helvetica, sans-serif",
+    fontVariant: "small-caps",
+    fontWeight: "bold",
 
     // paddingLeft: "22px",
     listStyle: "none",
   };
 
-  const middleStyles = {};
+  const middleStyles = {
+    backgroundImage: 'url("https://picsum.photos/2000")',
+    border: "5px solid #000039",
+    width: "200%",
+    height: "200px",
+    backgroundColor: "black",
+    // overflow: "hidden",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  };
+  const endStyles = {
+    display: "flex",
+    justifyContent: "space-between",
+    width: "100%",
+  };
 
-  const endStyles = {};
+  const boxStyles = {
+    width: "300px",
+    height: "100px",
+    // backgroundColor: "pink",
+    padding: "5px 10px 15px 20px",
+    display: "flex",
+    alignItems: "center",
+    // outlineStyle: "solid",
+    // outlineColor: "#000039",
+    fontVariant: "small-caps",
+    fontWeight: "bold",
+    fontFamily: "Arial, Helvetica, sans-serif",
+    color: "#000039",
+
+    // justifyContent: "space-around",
+  };
+  const buttonStyles = {
+    // backgroundColor: "#000039",
+    height: "115px",
+    width: "325px",
+    borderRadius: "25px",
+    color: "#000039",
+    fontFamily: "Arial, Helvetica, sans-serif",
+    border: "20px solid #000039",
+    fontWeight: "bold",
+    fontSize: "16px",
+  };
 
   return (
     <div style={styles}>
@@ -55,9 +98,17 @@ const ZLayout = () => {
       </div>
       <div style={middleStyles}></div>
       <div style={endStyles}>
-        <box></box>
-        <box></box>
-        <box></box>
+        <div style={boxStyles}>
+          A Z-Pattern design traces the route the human eye travels when they
+          read — left to right, top to bottom
+        </div>
+        <div style={boxStyles}>
+          Creating a web page with the Z-Layout helps to create a visual
+          hierarchy that people are likely to follow
+        </div>
+        <div style={boxStyles}>
+          <button style={buttonStyles}>CLICK HERE TO SUBSCRIBE</button>
+        </div>
       </div>
     </div>
   );
