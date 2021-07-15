@@ -1,6 +1,7 @@
 import React from 'react';
+import './glass.css';
 
-const GlassFront = () => {
+const GlassFront = props => {
   const cardStyles = {
     position: 'relative',
     width: '508px',
@@ -51,10 +52,6 @@ const GlassFront = () => {
         position: 'absolute',
         bottom: '120px',
         left: '45px',
-        color: '#fff',
-        fontWeight: '500',
-        fontSize: '18px',
-        textShadow: '0 2px 1px #005',
       },
       cardHolder: {
         position: 'absolute',
@@ -69,7 +66,9 @@ const GlassFront = () => {
 
   //
   return (
-    <div style={cardStyles}>
+    <div className='front' style={cardStyles}>
+      {' '}
+      {props.children}
       <div style={cardStyles.face}>
         <div style={cardStyles.face.debitCard}>
           <h3>Debit Card</h3>
@@ -78,7 +77,7 @@ const GlassFront = () => {
           <h3>Bank Name</h3>
         </div>
         <div style={cardStyles.face.imgChip}></div>
-        <div style={cardStyles.face.number}>
+        <div className='number' style={cardStyles.face.number}>
           <h3>0123 4567 8901 2345</h3>
         </div>
         <div
@@ -108,35 +107,9 @@ const GlassFront = () => {
           </h5>
         </div>
         <div style={cardStyles.face.cardHolder}>Mohammed Smith</div>
+        <div className='before'></div>
+        <div className='after'></div>
       </div>
-      <div
-        className='before'
-        style={{
-          content: '',
-          position: 'absolute',
-          bottom: '40px',
-          right: '40px',
-          width: '60px',
-          height: '60px',
-          background: '#fff',
-          borderRadius: '50%',
-          opacity: '0.5',
-        }}
-      ></div>
-      <div
-        className='after'
-        style={{
-          content: '',
-          position: 'absolute',
-          bottom: '40px',
-          right: '80px',
-          width: '60px',
-          height: '60px',
-          background: '#fff',
-          borderRadius: '50%',
-          opacity: '0.7',
-        }}
-      ></div>
     </div>
   );
 };
