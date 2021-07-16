@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './flat.css';
 
 const FlatGrid = () => {
@@ -41,6 +42,19 @@ const FlatGrid = () => {
     alignItems: 'center',
     flex: '1 1 auto',
     width: '100%',
+    //   img: {
+    //   display: 'flex',
+    //   alignItems: 'center',
+    //   justifyContent: 'center',
+    //   height: '50%,',
+    //   width: '50%',
+    //   one: {
+    //     backgroundImage: '/img/face.png',
+    //   },
+    //   two: {
+    //     backgroundImage: '/img/flatimg.jpg',
+    //   },
+    // },
   };
   const box = {
     flex: '0 1 auto',
@@ -56,13 +70,13 @@ const FlatGrid = () => {
   return (
     <div className='background' style={wrapper}>
       <div style={container}>
-        {[...new Array(2)].map(item => (
-          <div style={{ ...rectangle, ...chooseRandColor() }}></div>
-        ))}
+        <div style={{ ...rectangle, ...chooseRandColor() }}>thomas</div>
+
+        <div style={{ ...rectangle, ...chooseRandColor() }}> danny</div>
+
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
         <div style={wrap}>
           {[...new Array(2)].map(item => (
@@ -79,19 +93,16 @@ const FlatGrid = () => {
           <div style={{ ...rectangle, ...chooseRandColor() }}></div>
         ))}
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
       </div>
       <div style={container}>
@@ -99,17 +110,15 @@ const FlatGrid = () => {
           <div style={{ ...rectangle, ...chooseRandColor() }}></div>
         ))}
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
         {[...new Array(2)].map(item => (
           <div style={{ ...rectangle, ...chooseRandColor() }}></div>
         ))}
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
       </div>
       <div style={container}>
@@ -117,9 +126,8 @@ const FlatGrid = () => {
           <div style={{ ...rectangle, ...chooseRandColor() }}></div>
         ))}
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
         <div style={wrap}>
           {[...new Array(2)].map(item => (
@@ -127,29 +135,25 @@ const FlatGrid = () => {
           ))}
         </div>
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
       </div>
       <div style={container}>
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
         {[...new Array(1)].map(item => (
           <div style={{ ...rectangle, ...chooseRandColor() }}></div>
         ))}
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
         <div style={wrap}>
-          {[...new Array(2)].map(item => (
-            <div style={{ ...box, ...chooseRandColor() }}></div>
-          ))}
+          <div style={{ ...box, ...chooseRandColor() }}></div>
+          <div style={{ ...box, ...chooseRandColor() }}></div>
         </div>
         {[...new Array(1)].map(item => (
           <div style={{ ...rectangle, ...chooseRandColor() }}></div>
