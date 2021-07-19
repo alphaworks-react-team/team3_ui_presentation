@@ -7,8 +7,8 @@ const Nav = () => {
 	};
 	const styles = {
 		minHeight: "15vh",
-		backgroundColor: "#343a2b",
-		color: "white",
+		backgroundColor: "black",
+		color: "gray",
 		display: "flex",
 		flexDirection: "column",
 		justifyContent: "space-around",
@@ -18,7 +18,7 @@ const Nav = () => {
 		},
 		linkStyle: {
 			textDecoration: "none",
-			color: "white",
+			color: "gray",
 		},
 		dropStyle: {
 			display: "flex",
