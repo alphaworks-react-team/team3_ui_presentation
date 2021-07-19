@@ -1,0 +1,37 @@
+.background {
+  background-image: url(./img/flatimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rectangle {
+  width: 50px;
+  height: 50px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+}
+
+.rec-title {
+  align-self: flex-start;
+  transform: translate(50%, 25%);
+  color: #fff;
+  width: 25px;
+}
+.box-title {
+  display: inline-block;
+  align-self: flex-start;
+  transform: translate(50%, -60%);
+  margin: 0;
+  padding: 0;
+  height: 10px;
+  color: #fff;
+  width: 20px;
+}
+
+h5 {
+  font-weight: none;
+}

@@ -1,4 +1,6 @@
 import React from 'react';
+import './glass.css';
+
 const GlassBack = () => {
   const cardStyles = {
     position: 'relative',
@@ -69,7 +71,7 @@ const GlassBack = () => {
     },
   };
   return (
-    <div style={cardStyles}>
+    <div className='back' style={cardStyles}>
       <div style={cardStyles.back}>
         <div style={cardStyles.back.blackBar}></div>
         <div style={cardStyles.back.ccvText}>

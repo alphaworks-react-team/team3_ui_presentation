@@ -1,10 +1,6 @@
 import React from "react";
 import "./material.css";
 import MaterialNav from "./MaterialNav";
-import { Link } from "react-router-dom";
-import Button from "@material-ui/core/Button";
-import { Checkbox } from "@material-ui/core/Checkbox";
-import { FormLabel } from "@material-ui/core/FormControlLabel";
 import InboxOutlinedIcon from "@material-ui/icons/InboxOutlined";
 import StarOutlinedIcon from "@material-ui/icons/StarOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
@@ -13,21 +9,30 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import VideocamIcon from "@material-ui/icons/Videocam";
 import TodayIcon from "@material-ui/icons/Today";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import ArchiveIcon from "@material-ui/icons/Archive";
+import ReportIcon from "@material-ui/icons/Report";
+import DeleteIcon from "@material-ui/icons/Delete";
+import MarkunreadIcon from "@material-ui/icons/Markunread";
+import ScheduleIcon from "@material-ui/icons/Schedule";
+import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
+import FolderIcon from "@material-ui/icons/Folder";
+import LabelIcon from "@material-ui/icons/Label";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import StarBorderIcon from "@material-ui/icons/StarBorder";
+import ReplyIcon from "@material-ui/icons/Reply";
 const MaterialDesign = () => {
 	const styles = {
 		background:
 			"linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25))",
-		minHeight: "80vh",
-		padding:"0 20px",
-		// width:"90%",
+		minHeight: "65vh",
+		padding: "0 20px",
 		display: "flex",
-		// justifyContent: "space-around",
 		alignItems: "flex-start",
 		gap: "2%",
 		aside: {
-			// flex:"initial",
-			// flex: "1 0 auto",
-			// Width: "150px",
 			flexShrink: "inherit",
 			color: "gray",
 			minHeight: "400px",
@@ -35,19 +40,15 @@ const MaterialDesign = () => {
 			flexDirection: "column",
 			alignItems: "flex-start",
 			alignContent: "flex-start",
-			// flex: "0.8",
 		},
 		textStyle: {
 			margin: "0",
 			paddingLeft: "5px",
-			// alignSelf:"center"
-			// textAlign: "center",
 		},
 		iconStyles: {
 			minWidth: "75px",
 			display: "flex",
 			alignItems: "center",
-			// justifyContent: "space-between",
 			marginBottom: "5px",
 		},
 		hr: {
@@ -55,25 +56,50 @@ const MaterialDesign = () => {
 			color: "gray",
 		},
 		formContainer: {
-			// width: "70%",
-			// flex: "0.7 0 auto",
 			flex: "1 100px",
-			// flexGrow:"0.5",
-			// flex: "0.8",
-			// flex: "2",
-			background: "white",
-			boxShadow:
-				"12px 12px 16px 0 rgba(0, 0, 0, 0.25),-8px -8px 12px 0 rgba(255, 255, 255, 0.3)",
 			height: "400px",
 			width: "500px",
 			borderRadius: "10px",
 			display: "flex",
 			flexDirection: "column",
 		},
+		formContainerIcons: {
+			color: "gray",
+			display: "flex",
+			alignItems: "center",
+			justifyContent: "space-between",
+		},
+		verticalborder: {
+			border: "0.5px",
+			borderStyle: "dotted",
+			height: "30%",
+		},
+		formContainerHr: {
+			minWidth: "100%",
+			margin: "0",
+			color: "gray",
+		},
+		spanColor: {
+			color: "gray",
+			fontSize: "small",
+		},
+		iconColor: {
+			color: "gray",
+		},
+		account: {
+			display: "flex",
+			alignItems: "center",
+			justifyContent: "space-between",
+		},
+		email: {
+			display: "flex",
+			alignItems: "center",
+			justifyContent: "space-between",
+		},
 	};
 	return (
 		<div>
-			<MaterialNav/>
+			<MaterialNav />
 			<div style={styles}>
 				<div style={styles.aside}>
 					<div style={styles.iconStyles} className="hover">
@@ -99,11 +125,11 @@ const MaterialDesign = () => {
 					<hr style={styles.hr} />
 					<h5 style={{ margin: "5px 0 15px 0" }}>Meet</h5>
 					<div style={styles.iconStyles} className="hover">
-						<VideocamIcon color="gray" fontSize="small" />
+						<VideocamIcon fontSize="small" />
 						<h6 style={styles.textStyle}>New Meeting</h6>
 					</div>
 					<div style={styles.iconStyles} className="hover">
-						<TodayIcon color="gray" fontSize="small" />
+						<TodayIcon fontSize="small" />
 						<h6 style={styles.textStyle}>My Meetings</h6>
 					</div>
 					<hr style={styles.hr} />
@@ -114,10 +140,45 @@ const MaterialDesign = () => {
 					</div>
 				</div>
 				<div style={styles.formContainer}>
-					<Button variant="contained" color="primary" size="small">
+					<div style={styles.formContainerIcons}>
+						<ArrowBackIcon className="hoverOver" />
+						<ArchiveIcon className="hoverOver" />
+						<ReportIcon className="hoverOver" />
+						<DeleteIcon className="hoverOver" />
+						<div style={styles.verticalborder}></div>
+						<MarkunreadIcon className="hoverOver" />
+						<ScheduleIcon className="hoverOver" />
+						<CheckCircleOutlineIcon className="hoverOver" />
+						<div style={styles.verticalborder}></div>
+						<FolderIcon className="hoverOver" />
+						<LabelIcon className="hoverOver" />
+						<MoreVertIcon className="hoverOver" />
+						<p>9 of 86</p>
+						<ChevronLeftIcon className="hoverOver" />
+						<ChevronRightIcon className="hoverOver" />
+					</div>
+					<hr style={styles.formContainerHr} />
+					<div style={styles.email}>
+						<div style={styles.account}>
+							<AccountCircleIcon style={styles.iconColor} fontSize="large" />
+							<p>
+								<strong>Thomas Smith</strong>{" "}
+								<span style={styles.spanColor}>
+									{`<tsmith@alphaworks.tech>`} Thu Jul 15,2021, 6:34 PM
+								</span>
+							</p>
+						</div>
+						<div>
+
+						<StarBorderIcon style={styles.iconColor} className="hoverOver" />
+						<ReplyIcon style={styles.iconColor} className="hoverOver" />
+						<MoreVertIcon style={styles.iconColor} className="hoverOver" />
+						</div>
+					</div>
+					{/* <Link to="/"> lets go Home</Link> */}
+					{/* <Button variant="contained" color="primary" size="small">
 						Material Design
-					</Button>
-					<Link to="/"> lets go Home</Link>
+					</Button> */}
 					<p>
 						Material Design is a design language developed by Google in 2014.
 						Expanding on the "cards" that debuted in Google Now, Material Design

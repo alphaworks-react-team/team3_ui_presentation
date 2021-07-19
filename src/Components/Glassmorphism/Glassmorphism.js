@@ -1,22 +1,27 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import GlassFront from './GlassFront';
 import GlassBack from './GlassBack';
+import ReactCardFlip from 'react-card-flip';
+import './glass.css';
+
 const Glassmorphism = () => {
-    const styles = {
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column',
-    background: 'rgb(131,58,180)',
-    background:
-      'linear-gradient(54deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)',
-    minHeight: '80vh',
+  const [isFlipped, setFlipped] = useState(false);
+
+  const handleClick = () => {
+    setFlipped(!isFlipped);
   };
 
-  return <div style={styles}>
-    <GlassFront></GlassFront>
-    <GlassBack></GlassBack>
-  </div>;
+  return (
+    <div className='styleGlass'>
+      <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
+        <GlassFront />
+        <GlassBack className='back' />
+      </ReactCardFlip>
+      <button className='btn' onClick={handleClick}>
+        Click to Flip
+      </button>
+    </div>
+  );
 };
 
 export default Glassmorphism;
