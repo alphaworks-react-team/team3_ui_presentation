@@ -36,6 +36,7 @@ const ZLayout = () => {
     fontFamily: "Arial, Helvetica, sans-serif",
     fontVariant: "small-caps",
     fontWeight: "bold",
+    textShadow: "1px 1px 0px #ff0000",
 
     // paddingLeft: "22px",
     listStyle: "none",
@@ -70,6 +71,7 @@ const ZLayout = () => {
     fontWeight: "bold",
     fontFamily: "Arial, Helvetica, sans-serif",
     color: "#000039",
+    textShadow: "1px 1px 0px #ff0000",
 
     // justifyContent: "space-around",
   };
@@ -83,6 +85,7 @@ const ZLayout = () => {
     border: "20px solid #000039",
     fontWeight: "bold",
     fontSize: "16px",
+    textShadow: "1px 1px 0px #ff0000",
   };
 
   return (

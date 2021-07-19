@@ -1,5 +1,6 @@
 import React from "react";
 import GoogleButton from "react-google-button";
+import googleIcon from "./Images/Google_icon.png";
 const FLayout = () => {
   const styles = {
     paddingTop: "20px",
@@ -23,8 +24,8 @@ const FLayout = () => {
     left: "0px",
     right: "20px",
     top: "40px",
-    backgroundImage: 'url("https://i.redd.it/b87c10q2n1c01.jpg")',
-    backgroundSize: "100px",
+    backgroundImage: `url(${googleIcon})`,
+    backgroundSize: "110px",
     backgroundPosition: "leftTop",
     backgroundRepeat: "no-repeat",
     paddingTop: "40px",
