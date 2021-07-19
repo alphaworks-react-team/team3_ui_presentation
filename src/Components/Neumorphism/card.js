@@ -10,8 +10,8 @@ const card = ({ title }) => {
         display: "flex",
 		alignItems: "center",
 		justifyContent: "center",
-		height: "250px",
-        width: "250px",
+		height: "350px",
+        width: "350px",
         cursor: "pointer",
         margin:"20px"
 	};

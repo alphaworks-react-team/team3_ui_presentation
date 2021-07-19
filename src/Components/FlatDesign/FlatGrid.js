@@ -302,5 +302,4 @@ const FlatGrid = () => {
     </div>
   );
 };
-
 export default FlatGrid;

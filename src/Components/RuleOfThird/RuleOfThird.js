@@ -12,7 +12,7 @@ import btmRig from "./Images/xdp_bottomRight.png";
 
 const RuleOfThird = () => {
   const styles = {
-    minHeight: "80vh",
+    minHeight: "75vh",
     // backgroundColor: "purple",
   };
   const gridStyles = {
@@ -33,56 +33,56 @@ const RuleOfThird = () => {
   //   // // backgroundColor: "pink",
   // };
   const leftTop = {
-    height: "220px",
-    width: "220px",
+    height: "300px",
+    width: "300px",
     backgroundImage: `url(${topLft})`,
     backgroundRepeat: "no-repeat",
   };
   const middleTop = {
-    height: "220px",
-    width: "220px",
+    height: "300px",
+    width: "300px",
     backgroundImage: `url(${midTop})`,
     backgroundRepeat: "no-repeat",
   };
   const rightTop = {
-    height: "220px",
-    width: "220px",
+    height: "300px",
+    width: "300px",
     backgroundImage: `url(${rigTop})`,
     backgroundRepeat: "no-repeat",
   };
   const middleLeft = {
-    height: "220px",
-    width: "220px",
+    height: "300px",
+    width: "300px",
     backgroundImage: `url(${midLft})`,
     backgroundRepeat: "no-repeat",
   };
   const middle = {
-    height: "220px",
-    width: "220px",
+    height: "300px",
+    width: "300px",
     backgroundImage: `url(${mid})`,
     backgroundRepeat: "no-repeat",
   };
   const middleRight = {
-    height: "220px",
-    width: "220px",
+    height: "300px",
+    width: "300px",
     backgroundImage: `url(${midRig})`,
     backgroundRepeat: "no-repeat",
   };
   const bottomLeft = {
-    height: "220px",
-    width: "220px",
+    height: "300px",
+    width: "300px",
     backgroundImage: `url(${btmLft})`,
     backgroundRepeat: "no-repeat",
   };
   const bottomMiddle = {
-    height: "220px",
-    width: "220px",
+    height: "300px",
+    width: "300px",
     backgroundImage: `url(${btmMid})`,
     backgroundRepeat: "no-repeat",
   };
   const bottomRight = {
-    height: "220px",
-    width: "220px",
+    height: "300px",
+    width: "300px",
     backgroundImage: `url(${btmRig})`,
     backgroundRepeat: "no-repeat",
   };
