@@ -12,79 +12,97 @@ import btmRig from "./Images/xdp_bottomRight.png";
 
 const RuleOfThird = () => {
   const styles = {
-    minHeight: "75vh",
-    // backgroundColor: "purple",
-  };
+		minHeight: "51vh",
+		// backgroundColor: "purple",
+	};
   const gridStyles = {
     display: "flex",
     // flexDirection: "column",
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
-    width: "55%",
-    border: "4px solid black",
+    minWidth: "50%",
+    // border: "4px solid black",
     // // height: "30%",
     // paddingTop: "60px",
     // paddingBottom: "60px",
-    padding: "60px 25% 60px 25%",
+    padding: "60px 25% 0px 25%",
   };
   // const hoverStyles = {
   //   // transform: "scale(1.1)" /* Equal to scaleX(0.7) scaleY(0.7) */,
   //   // // backgroundColor: "pink",
   // };
   const leftTop = {
-    height: "300px",
-    width: "300px",
+    height: "275px",
+    width: "275px",
     backgroundImage: `url(${topLft})`,
     backgroundRepeat: "no-repeat",
+    backgroundSize: 'contain',
+    marginRight:"20px"
   };
   const middleTop = {
-    height: "300px",
-    width: "300px",
-    backgroundImage: `url(${midTop})`,
-    backgroundRepeat: "no-repeat",
-  };
+		height: "275px",
+		width: "275px",
+		backgroundImage: `url(${midTop})`,
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "contain",
+    marginRight:"20px"
+	};
   const rightTop = {
-    height: "300px",
-    width: "300px",
+    height: "275px",
+    width: "275px",
     backgroundImage: `url(${rigTop})`,
     backgroundRepeat: "no-repeat",
+    backgroundSize: 'contain',
+    marginRight:"20px"
   };
   const middleLeft = {
-    height: "300px",
-    width: "300px",
+    height: "275px",
+    width: "275px",
     backgroundImage: `url(${midLft})`,
     backgroundRepeat: "no-repeat",
+    backgroundSize: 'contain',
+    marginRight:"20px"
   };
   const middle = {
-    height: "300px",
-    width: "300px",
-    backgroundImage: `url(${mid})`,
-    backgroundRepeat: "no-repeat",
-  };
+		height: "275px",
+		width: "275px",
+		backgroundImage: `url(${mid})`,
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "contain",
+    marginRight:"20px"
+	};
   const middleRight = {
-    height: "300px",
-    width: "300px",
+    height: "275px",
+    width: "275px",
     backgroundImage: `url(${midRig})`,
     backgroundRepeat: "no-repeat",
+    backgroundSize: 'contain',
+    marginRight:"20px"
   };
   const bottomLeft = {
-    height: "300px",
-    width: "300px",
+    height: "275px",
+    width: "275px",
     backgroundImage: `url(${btmLft})`,
     backgroundRepeat: "no-repeat",
+    backgroundSize: 'contain',
+    marginRight:"20px"
   };
   const bottomMiddle = {
-    height: "300px",
-    width: "300px",
-    backgroundImage: `url(${btmMid})`,
-    backgroundRepeat: "no-repeat",
-  };
+		height: "275px",
+		width: "275px",
+		backgroundImage: `url(${btmMid})`,
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "contain",
+    marginRight:"20px"
+	};
   const bottomRight = {
-    height: "300px",
-    width: "300px",
+    height: "275px",
+    width: "275px",
     backgroundImage: `url(${btmRig})`,
     backgroundRepeat: "no-repeat",
+    backgroundSize: 'contain',
+    marginRight:"20px"
   };
   return (
     <div style={styles}>

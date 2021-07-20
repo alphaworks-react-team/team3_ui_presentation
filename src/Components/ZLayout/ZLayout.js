@@ -2,7 +2,7 @@ import React from "react";
 
 const ZLayout = () => {
   const styles = {
-    minHeight: "80vh",
+    minHeight: "71vh",
     // backgroundColor: "purple",
     // position: "relative",
     display: "flex",
