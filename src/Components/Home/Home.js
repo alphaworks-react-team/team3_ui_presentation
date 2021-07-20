@@ -20,7 +20,7 @@ const Home = () => {
 		return { backgroundImage: randColor };
 	};
     const styles = {
-			height: "75vh",
+			height: "71vh",
 			linkStyle: {
 				textDecoration: "none",
 				color: "white",

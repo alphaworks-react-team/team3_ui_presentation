@@ -1,9 +1,10 @@
 import Card from "./card";
+import CardConcave from "./CardConcave";
 import { Link } from "react-router-dom";
 
 const Home = () => {
 	const styles = {
-		minHeight: "80vh",
+		minHeight: "61vh",
 		backgroundColor: "#afd275",
 		padding: "50px",
 		display: "flex",
@@ -21,25 +22,25 @@ const Home = () => {
 				<Card title={"Material Design"} />
 			</Link>
 			<Link to="/Glassmorphism" style={styles.linkStyle}>
-				<Card title={"Glassmorphism"} />
+				<CardConcave title={"Glassmorphism"} />
 			</Link>
 			<Link to="/Zlayout" style={styles.linkStyle}>
 				<Card title={"Z Layout"} />
 			</Link>
 			<Link to="/FLayout" style={styles.linkStyle}>
-				<Card title={"F Layout"} />
+				<CardConcave title={"F Layout"} />
 			</Link>
 			<Link to="/RuleOfThird" style={styles.linkStyle}>
 				<Card title={"Rule of Thirds"} />
 			</Link>
 			<Link to="/Neumorphism" style={styles.linkStyle}>
-				<Card title={"Neumorphism"} />
+				<CardConcave title={"Neumorphism"} />
 			</Link>
 			<Link to="/FlatDesign" style={styles.linkStyle}>
 				<Card title={"Flat Design"} />
 			</Link>
 			<Link to="/GoldenRatio" style={styles.linkStyle}>
-				<Card title={"Golden Ratio"} />
+				<CardConcave title={"Golden Ratio"} />
 			</Link>
 		</div>
 	);
