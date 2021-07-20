@@ -27,12 +27,13 @@ const MaterialDesign = () => {
 	const styles = {
 		background:
 			"linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25))",
-		minHeight: "65vh",
+		minHeight: "61vh",
 		padding: "0 20px",
 		display: "flex",
 		alignItems: "flex-start",
-		gap: "2%",
+		gap: "3%",
 		aside: {
+			// flex:"0.1",
 			flexShrink: "inherit",
 			color: "gray",
 			minHeight: "400px",
